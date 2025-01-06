@@ -1,5 +1,5 @@
 # GoogleDriveFolderMerger
-A python tool to merge self-owned files in two folders, even if intermediate folders are owned by others
+A python tool to merge files in two folders, even if intermediate folders are owned by others
 
 ## Technology used:
 - Python3
@@ -14,7 +14,7 @@ A python tool to merge self-owned files in two folders, even if intermediate fol
 </p>
 <p>
   However, on account shutdown / use of Takeout, I encountered a situation where the files from each account
-  were seperated into two folders within my personal account. Forr example: 
+  were separated into two folders within my personal account. For example: 
 </p>
 
 ```
@@ -62,10 +62,13 @@ Archives (this contains files owned by personal account)
   Execute one script after the other, and ensure the constants at the top of each script are 
   updated. 
 </p>
-<p>
-  Note: On first run, a webpage will appear requesting Google Account approval. It will say that 
+
+Important notes:
+- On first run, a webpage will appear requesting Google Account approval. It will say that 
   the project cannot be trusted (This is because the API access is done through a non-verified 
   Google Cloud project owned by me). If you feel like you can trust me 🤡 you can click the 
-  `Continue` button regardless. 
-</p>
+  `Continue` button regardless.
+- The `credentials.json` present here is a link to the Google Cloud account. This is not associated
+  with your account. Please leave this be.
+- The `token.json` generated on first run is a key to your account. Be **VERY CAREFUL** with this file. 
 
