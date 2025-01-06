@@ -24,7 +24,7 @@ Archives
     ├── orgfile2
     └── personalfile2
 ```
-Becomes two folders:
+Becomes two folders, both owned by the personal account:
 ```
 Archives (this contains files owned by org account)
 ├── orgfile1
