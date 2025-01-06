@@ -51,24 +51,29 @@ Archives (this contains files owned by personal account)
 
 ## How To
 <p> Pull this repo. </p>
-<p>
-  This tool is split into 2 steps:
-</p>
 
-1. `1queryAllFiles.py`:  A record of all your Google Drive files are pulled from online into `filetree.json`
-2. `2mergeFiles.py`:     The files from `filetree.json` are filtered & the API calls to move them are executed
+This tool is split into 2 steps, `1queryAllFiles.py` and `2mergeFiles.py`
 
 <p>
-  Execute one script after the other, and ensure the constants at the top of each script are 
-  updated. 
+  Read the sections below. 
+</p>
+<p>
+  Update the constants at the top of each script, then run one after the other
 </p>
 
-Important notes:
+### Authentication
+
+This tool requires Google authentication. You can either:
+1. Follow the steps at [Configure OAuth Consent](https://developers.google.com/workspace/guides/configure-oauth-consent)
+   and [Create AccessCredentials](https://developers.google.com/workspace/guides/create-credentials)
+   to obtain OAuth credentials in the form of a json. Rename this json `credentials.json`
+2. Ask me (if you know me) for the credentials to my Google Cloud project. It will work,
+   but I do not put it here for fear someone exhausts my quota
+
+### Other Important Notes
 - On first run, a webpage will appear requesting Google Account approval. It will say that 
   the project cannot be trusted (This is because the API access is done through a non-verified 
   Google Cloud project owned by me). If you feel like you can trust me 🤡 you can click the 
   `Continue` button regardless.
-- The `credentials.json` present here is a link to the Google Cloud account. This is not associated
-  with your account. Please leave this be.
 - The `token.json` generated on first run is a key to your account. Be **VERY CAREFUL** with this file. 
 
