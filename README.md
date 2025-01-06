@@ -50,6 +50,7 @@ Archives (this contains files owned by personal account)
 </p>
 
 ## How To
+<p> Pull this repo. </p>
 <p>
   This tool is split into 2 steps:
 </p>
@@ -58,6 +59,13 @@ Archives (this contains files owned by personal account)
 2. `2mergeFiles.py`:     The files from `filetree.json` are filtered & the API calls to move them are executed
 
 <p>
-  Execute one script after the other, and ensure the constants at the top of each script are updated. 
+  Execute one script after the other, and ensure the constants at the top of each script are 
+  updated. 
+</p>
+<p>
+  Note: On first run, a webpage will appear requesting Google Account approval. It will say that 
+  the project cannot be trusted (This is because the API access is done through a non-verified 
+  Google Cloud project owned by me). If you feel like you can trust me 🤡 you can click the 
+  `Continue` button regardless. 
 </p>
 
